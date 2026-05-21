@@ -21,6 +21,19 @@
 </head>
 
 <body>
+    <!-- ================= DARK MODE TOGGLE ================= -->
+<div class="dark-mode-container">
+
+    <label>
+
+<!-- Checkbox used as dark mode toggle -->
+        <input type="checkbox" id="darkModeToggle">
+
+       Dark Mode
+
+</label>
+
+</div>
     <!-- Everything visible on the webpage goes inside the body -->
 
     <!-- ================= HEADER SECTION ================= -->
@@ -39,6 +52,7 @@
 
         <!-- Navigation links to different sections of the webpage -->
         <a href="#about">About</a>
+        <a href="featured">Featured</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
 
@@ -67,8 +81,59 @@
             My goal is to become a professional software developer and
             build useful applications for people around the world.
         </p>
+        <!-- Skills list generated using JavaScript -->
+       <h3>My Skills</h3>
+
+        <ul id="skillsList"></ul>
 
     </section>
+    <!-- ================= FEATURED CONTENT ================= -->
+<section id="featured">
+
+     <h2>Featured Content</h2>
+
+<!-- University Resources DIV -->
+<div id="universityResources" class="featured-box">
+
+     <h3>University Resources</h3>
+
+    <p>
+        Visit the ECPI University website:
+    </p>
+
+<a href="https://www.ecpi.edu/"
+target="_blank">
+
+ECPI University
+
+</a>
+
+</div>
+
+<!-- Personal Projects DIV -->
+<div id="personalProjects" class="featured-box">
+
+<h3>Personal Projects</h3>
+
+<!-- Project image links -->
+<a href="https://github.com/yourusername/project1"
+target="_blank">
+
+<img src="https://via.placeholder.com/200x120"
+alt="Project 1">
+
+</a>
+
+<a href="https://github.com/yourusername/project2"
+target="_blank">
+
+<img src="https://via.placeholder.com/200x120"
+alt="Project 2">
+
+</a>
+
+</div>
+
 
     <!-- ================= PROJECTS SECTION ================= -->
     <section id="projects" class="projects">
@@ -174,9 +239,102 @@
             document.getElementById("welcomeMessage").innerHTML =
                 "Welcome to My Portfolio, " + userName + "!";
         }
+        // ================= SKILLS ARRAY + LOOP =================
 
-    </script>
+// Array containing skills
+let skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Git",
+    "GitHub"
+];
+
+// Select the skills list
+let skillsList = document.getElementById("skillsList");
+
+// Loop through the array
+skills.forEach(function(skill) {
+
+     // Create a new list item
+     let li = document.createElement("li");
+
+     // Add skill text
+     li.textContent = skill;
+
+     // Append item to list
+      skillsList.appendChild(li);
+
+});
+
+// ================= CONDITIONAL LOGIC =================
+
+// Count project links
+let projectCount =
+    document.querySelectorAll(".project-container a").length;
+
+// Select divs
+let universityResources =
+    document.getElementById("universityResources");
+
+let personalProjects =
+    document.getElementById("personalProjects");
+
+// If fewer than 3 projects
+if (projectCount < 3) {
+
+    // Show both divs
+    universityResources.style.display = "block";
+    personalProjects.style.display = "block";
+
+} else {
+
+    // Hide university resources
+     universityResources.style.display = "none";
+
+     // Show personal projects only
+     personalProjects.style.display = "block";
+}
+
+// ================= DARK MODE =================
+
+// Select checkbox
+let darkModeToggle =
+    document.getElementById("darkModeToggle");
+
+// Add event listener
+darkModeToggle.addEventListener("change", function() {
+
+   // Toggle dark mode class
+    ocument.body.classList.toggle("dark-mode");
+
+});
+
+// ================= FORM INTERACTIVITY =================
+
+// Select form
+let contactForm =
+     document.getElementById("contactForm");
+
+// Add submit event listener
+contactForm.addEventListener("submit", function(event) {
+
+     // Prevent page refresh
+     event.preventDefault();
+
+    // Get user's name from form
+    let name =
+        document.getElementById("name").value;
+
+     // Display confirmation message
+     alert(
+         "Thank you, " + name +
+          ", your message has been sent!"
+     );
+
+   });
+
+ </script>
 
 </body>
-
-</html>
+</html
