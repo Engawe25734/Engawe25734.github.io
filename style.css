@@ -12,6 +12,22 @@ body {
 
     /* Sets background color */
     background-color: #f4f4f4;
+    color: black;
+}
+/*===============DARK MODE========================*/
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+/* ================= DARK MODE TOGGLE ================= */
+
+.dark-mode-container {
+
+padding: 15px;
+
+text-align: right;
+
+background-color: #ddd;
 }
 
 /* ================= HEADER STYLING ================= */
@@ -80,24 +96,32 @@ section {
     /* Rounded corners */
     border-radius: 5px;
 }
+/* ================= FEATURED BOXES ================= */
 
+.featured-box {
+
+border: 2px solid #333;
+
+padding: 15px;
+
+margin-top: 15px;
+
+background-color: #f9f9f9;
+}
 /* ================= PROJECT IMAGES ================= */
 
-/* Styles project images */
-.projects img {
+.project-container img,
+#personalProjects img {
 
-    /* Image width */
-    width: 250px;
+width: 250px;
 
-    /* Image height */
-    height: 150px;
+height: 150px;
 
-    /* Adds spacing around images */
-    margin: 10px;
+margin: 10px;
 
-    /* Rounded image corners */
-    border-radius: 5px;
+border-radius: 5px;
 }
+
 
 /* ================= FORM STYLING ================= */
 
