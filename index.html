@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- Declares this document as an HTML5 document -->
+
+<html lang="en">
+<!-- Root element of the webpage and language is set to English -->
+
+<head>
+
+    <!-- Character encoding allows special characters to display correctly -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive on phones and tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed on the browser tab -->
+    <title>My Portfolio</title>
+
+    <!-- Links the external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Everything visible on the webpage goes inside the body -->
+
+    <!-- ================= HEADER SECTION ================= -->
+    <header>
+
+        <!-- Main heading of the webpage -->
+        <h1 id="welcomeMessage">Welcome to My Portfolio</h1>
+
+        <!-- Short description under the heading -->
+        <p>Web Development Student Portfolio</p>
+
+    </header>
+
+    <!-- ================= NAVIGATION MENU ================= -->
+    <nav>
+
+        <!-- Navigation links to different sections of the webpage -->
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section id="about">
+
+        <!-- Section heading -->
+        <h2>About Me</h2>
+
+        <!-- Introduction paragraph -->
+        <p>
+            Hello! My name is Irving Peress. I am a software development student
+            learning HTML, CSS, JavaScript, databases, and web design.
+        </p>
+
+        <!-- Additional information -->
+        <p>
+            I enjoy creating websites, solving programming problems,
+            and learning new technologies that improve user experience.
+        </p>
+
+        <!-- Career goal -->
+        <p>
+            My goal is to become a professional software developer and
+            build useful applications for people around the world.
+        </p>
+
+    </section>
+
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section id="projects" class="projects">
+
+        <!-- Section title -->
+        <h2>Projects</h2>
+
+        <!-- Small description -->
+        <p>Below are some sample projects:</p>
+
+        <!-- Project 1 -->
+        <!-- Clicking the image opens the GitHub project -->
+        <a href="https://github.com/Engawe25734/engawe2573.github.io.git" target="_blank">
+
+            <!-- Placeholder image for project -->
+            <img src="https://via.placeholder.com/250x150"
+                alt="Javascript Project 1">
+
+        </a>
+
+        <!-- Project 2 -->
+        <a href="https://github.com/Engawe25734/tesla-app.git" target="_blank">
+
+            <img src="https://via.placeholder.com/250x150"
+                alt="Javascript Project 2">
+
+        </a>
+
+        <!-- Project 3 -->
+        <a href="https://github.com/Engawe25734/maven-enterprise-application.git" target="_blank">
+
+            <img src="https://via.placeholder.com/250x150"
+                alt="Javascript Project 3">
+
+        </a>
+
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact">
+
+        <!-- Contact section heading -->
+        <h2>Contact Me</h2>
+
+        <!-- Contact form begins -->
+        <form>
+
+            <!-- Label and input for sender's name -->
+            <label for="name">Name:</label>
+
+            <input type="text"
+                id="name"
+                name="name"
+                required>
+
+            <!-- Label and input for email -->
+            <label for="email">Email:</label>
+
+            <input type="email"
+                id="email"
+                name="email"
+                required>
+
+            <!-- Label and input for subject -->
+            <label for="subject">Subject:</label>
+
+            <input type="text"
+                id="subject"
+                name="subject"
+                required>
+
+            <!-- Label and textarea for message -->
+            <label for="message">Message:</label>
+
+            <textarea id="message"
+                name="message"
+                rows="5"
+                required></textarea>
+
+            <!-- Submit button -->
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= JAVASCRIPT SECTION ================= -->
+    <script>
+
+        // Ask the user to enter their name
+        let userName = prompt("What is your name?");
+
+        // Check if the user entered something
+        if (userName !== null && userName !== "") {
+
+            // Change the heading text dynamically
+            document.getElementById("welcomeMessage").innerHTML =
+                "Welcome to My Portfolio, " + userName + "!";
+        }
+
+    </script>
+
+</body>
+
+</html>
