@@ -1,0 +1,146 @@
+/* ============= BODY STYLING ================= */
+
+/* Styles the entire webpage */
+body {
+
+    /* Sets the font style */
+    font-family: Arial, sans-serif;
+
+    /* Removes default browser spacing */
+    margin: 0;
+    padding: 0;
+
+    /* Sets background color */
+    background-color: #f4f4f4;
+}
+
+/* ================= HEADER STYLING ================= */
+
+/* Styles the top section of the webpage */
+header {
+
+    /* Dark background color */
+    background-color: #333;
+
+    /* White text color */
+    color: white;
+
+    /* Adds space inside the header */
+    padding: 20px;
+
+    /* Centers text horizontally */
+    text-align: center;
+}
+
+/* ================= NAVIGATION MENU ================= */
+
+/* Styles the navigation container */
+nav {
+
+    /* Slightly lighter dark background */
+    background-color: #444;
+
+    /* Adds spacing inside the navigation bar */
+    padding: 10px;
+
+    /* Centers navigation links */
+    text-align: center;
+}
+
+/* Styles the navigation links */
+nav a {
+
+    /* Makes links white */
+    color: white;
+
+    /* Removes underline from links */
+    text-decoration: none;
+
+    /* Adds spacing between links */
+    margin: 15px;
+
+    /* Makes text bold */
+    font-weight: bold;
+}
+
+/* ================= SECTION STYLING ================= */
+
+/* Styles all webpage sections */
+section {
+
+    /* Adds space inside sections */
+    padding: 20px;
+
+    /* Adds space outside sections */
+    margin: 20px;
+
+    /* White background */
+    background-color: white;
+
+    /* Rounded corners */
+    border-radius: 5px;
+}
+
+/* ================= PROJECT IMAGES ================= */
+
+/* Styles project images */
+.projects img {
+
+    /* Image width */
+    width: 250px;
+
+    /* Image height */
+    height: 150px;
+
+    /* Adds spacing around images */
+    margin: 10px;
+
+    /* Rounded image corners */
+    border-radius: 5px;
+}
+
+/* ================= FORM STYLING ================= */
+
+/* Styles form input fields and textarea */
+form input,
+form textarea {
+
+    /* Makes form fields full width */
+    width: 100%;
+
+    /* Adds inner spacing */
+    padding: 10px;
+
+    /* Adds spacing above */
+    margin-top: 10px;
+
+    /* Adds spacing below */
+    margin-bottom: 15px;
+}
+
+/* ================= BUTTON STYLING ================= */
+
+/* Styles the submit button */
+button {
+
+    /* Dark background color */
+    background-color: #333;
+
+    /* White text */
+    color: white;
+
+    /* Adds spacing inside button */
+    padding: 10px 20px;
+
+    /* Removes default border */
+    border: none;
+
+    /* Changes mouse cursor on hover */
+    cursor: pointer;
+}
+
+/* Changes button color when mouse hovers over it */
+button:hover {
+
+    background-color: #555;
+}
